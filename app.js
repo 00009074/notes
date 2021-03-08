@@ -17,6 +17,10 @@ app.get('/notes', (req, res)=> {
 	const notes = ['RM','JN']
 	res.render('all_notes', { notes: notes })
 })
+//mocking the router handling for note detail page
+app.get('/notes/detail', (req, res) => {
+	res.render('note_detail')
+})
 
 app.listen(8000, err => {
 	if (err) throw err
