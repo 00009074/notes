@@ -13,6 +13,11 @@ app.get('/create_note', (req, res) => {
 	res.render('create_note')
 }) 
 
+app.get('/notes', (req, res)=> {
+	const notes = ['RM','JN']
+	res.render('all_notes', { notes: notes })
+})
+
 app.listen(8000, err => {
 	if (err) throw err
 	console.log("App is running...")
