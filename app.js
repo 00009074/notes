@@ -14,7 +14,7 @@ app.get('/create_note', (req, res) => {
 }) 
 
 app.get('/notes', (req, res)=> {
-	const notes = ['RM', 'JN', 'SG', 'JH', 'JM', 'V', "JK"]
+	const notes = ['RM', 'JN', 'SG', 'JH', 'JM', 'TH', "JK"]
 	res.render('all_notes', { notes: notes })
 })
 //mocking the router handling for note detail page
