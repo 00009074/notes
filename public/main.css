@@ -52,3 +52,36 @@ a:hover {
 	background: tomato;
 	color: #FFF;
 }
+
+/* CREATE NOTE */
+.page-title {
+	margin-bottom: 35px;
+}
+
+.form {
+	width: 100%;
+}
+.label,
+.input {
+	display: block;
+}
+
+.label {
+	margin-bottom: 5px;
+}
+
+.input {
+	width: 100%;
+	font-size: 1.3rem;
+	padding: 10px;
+	border: 1px solid #ccc;
+	margin-bottom: 20px;
+}
+
+.btn {
+	font-size: 1.3rem;
+	border: none;
+	background: tomato;
+	color: #fff;
+	padding: 15px 30px;
+}
