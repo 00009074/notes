@@ -1,11 +1,14 @@
 extends layout.pug 
 
 block content 
-    main.content 
-        h1.page-title All Notes
+  main.content 
+    h1.page-title All Notes
 
-        if notes.length 
-            each note in notes 
-                a.note(href='/notes/detail')= note 
-        else 
-            p There are no notes yet 
+      each val in notes
+        a(href =`notes/${val.id}`) #{ val.title}
+
+      if notes.length 
+        each note in notes 
+          a.note(href='/notes/detail')= note 
+      else 
+        p There are no notes yet 
